@@ -247,7 +247,7 @@ if st.button("Run Comparison"):
              # Create the combined prompt for the 'smart' response
              injected_prompt_content = question_text
              if captured_reasoning: # Only inject if reasoning was successfully captured (not None and not empty string)
-                 injected_prompt_content = f"{question_text}\n\nHere is some context or a thinking process that might help you:\n```\n{captured_reasoning}\n```"
+                 injected_prompt_content = f"Question:\n{question_text}\n\nHelpful Thinking Process:\n```\n{captured_reasoning}\n```\nNow, please answer the question carefully."
              else:
                   # If no explicit reasoning was captured, the prompt content remains just the original question.
                   st.warning(f"No explicit reasoning content was captured from {MINI_MODEL}. The injected prompt for {LARGE_MODEL} contains only the original question.")
