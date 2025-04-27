@@ -1,0 +1,5 @@
+streamlit
+openai
+requests
+python-dotenv
+httpx  # Good to include explicitly as openai uses it
