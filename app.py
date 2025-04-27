@@ -44,7 +44,7 @@ def get_reasoning_content_non_streaming(question_text):
             "messages": [
                 {"role": "user", "content": question_text}
             ],
-            "reasoning_effort": "high" # Request high reasoning effort
+            "reasoning_effort": "low" # Request high reasoning effort
             # Do NOT set stream=True here
         }
 
